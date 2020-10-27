@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  background-color:#dddfe2 ;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+.container {
+  margin-top: 170px;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.leftbox,
+.rightbox {
+  display: inline-block;
+}
+.leftbox {
+  float: left;
+}
+.rightbox {
+  
+  width: 400px;
+  margin-left: 200px;
+  
+  box-shadow: none;
+  text-align: center;
+}
+#dangnhap {box-shadow: 0 2px 4px;height: 350px;background-color: white;border-radius: 6px;
+}
+.taotk {
+  background-color: #42b72a;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 48px;
+  padding: 0 16px;
+  color: white;
+}
+.loginbutton {
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 0 16px;
+  width: 332px;
+  color: white;
+}
+.nhapmk {
+  font-size: 17px;
+  padding: 14px 16px;
+  width: 330px;
+  border-radius: 6px;
+  line-height: 16px;
+}
+.nhaptk {
+  border-radius: 6px;
+  font-size: 17px;
+  padding: 14px 16px;
+  width: 330px;
+}
+.quenmk {
+  color: #1877f2;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px;
+}
+.breakline {
+  align-items: center;
+  border-bottom: 1px solid slategray;
+  display: flex;
+  margin: 20px 26px;
+  text-align: center;
+}
+.taotrang{border-top: none;margin-top: 28px;}
