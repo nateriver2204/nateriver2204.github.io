@@ -242,57 +242,74 @@ p {
   text-decoration: none;
   color: black;
 }
-.menu {
+header {
   position: relative;
 }
+
 .submenu {
   list-style: none;
-  width: 200px;
-  height: 200px;
+  width: 197px;
   font-size: 17px;
-  background-color: gray;
+  background-color: lightgrey;
   display: none;
   margin-top: 0px;
   padding-left: 10px;
   padding-top: 10px;
   position: absolute;
+  height: 220px;
   top: 100%;
 }
 .menulink:hover > .submenu {
-  display: block;height: 300px;  
+  display: block;
 }
 .subitem {
   padding-bottom: 15px;
 }
 .submenu2 {
   list-style: none;
-  width: 192px;
+  width: 197px;
   height: 220px;
   font-size: 17px;
-  background-color: gray;
-  display: none;  
+  background-color: white;
+  display: none;
   padding-top: 10px;
   position: absolute;
   left: 100%;
   top: 35px;
   text-transform: none;
+  box-shadow: 0 2px 4px 2px;
 }
-.subitem2{padding-bottom: 15px;text-align: center;}
+.subitem2 {
+  padding-bottom: 15px;
+}
 .subitem:hover > .submenu2 {
   display: block;
 }
-nav>ul li{display: flex;}
-.submenu3{
+nav > ul li {
+  display: flex;
+}
+.submenu3 {
   list-style: none;
   width: 192px;
   height: 40px;
   font-size: 17px;
-  background-color: gray;
+  background-color: white;
   display: none;
   padding-top: 10px;
   position: absolute;
   left: 100%;
   top: 0;
+  box-shadow: 0 2px 2px 2px;
 }
-.subitem2:hover > .submenu3{display: block;}
-.subitem3{padding-bottom: 15px;text-align: center;}
+.subitem2:hover > .submenu3 {
+  display: block;
+}
+.subitem3 {
+  padding-bottom: 15px;
+}
+a:hover {
+  color: lightseagreen;
+}
+a:active {
+  color: maroon;
+}
