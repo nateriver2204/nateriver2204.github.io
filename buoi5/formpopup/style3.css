@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+.form-wrapper {
+  width: 432px;
+  height: 560px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  box-shadow: 0 2px 4px;
+  border-radius: 8px;
+  position: relative;
+}
+.form-wrapper img {
+  border: 0;
+  right: 0px;
+  width: 24px;
+  height: 24px;
+  position:absolute;
+}
+.noidung {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 600px;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.mota {
+  color: #606770;
+  font-size: 15px;
+  line-height: 24px;
+  padding-left: 10px;
+}
+.dienform {
+  border-top: 1px solid gray;
+  margin-top: 10px;
+}
+.title1 {
+  color: #606770;
+  font-size: 14px;
+  font-weight: normal;
+}
+fieldset {
+  margin-top: 10px;
+}
+#ho,
+#ten {
+  width: 200px;
+  margin-left: 8px;
+  line-height: 30px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+#sdt,
+#mkmoi {
+  width: 412px;
+  margin-left: 8px;
+  line-height: 30px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+#ngaysinh,
+#thangsinh,
+#namsinh {
+  width: 130px;
+  font-size: 14px;
+  height: 30px;
+  margin-right: 2px;
+}
+.bocnu,
+.bocnam,
+.boctuychinh {
+  display: inline-block;
+  width: 130px;
+  border: 1px solid gray;
+  height: 30px;
+  border-radius: 4px;
+  margin-right: 2px;
+  padding-left: 9px;
+  line-height: 30px;
+}
+.cookie {
+  margin-left: 10px;
+  width: 410px;
+  text-align: justify;
+}
+.dangky {
+  width: 300px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nutdangky {
+  height: 40px;
+  background-color: #00a400;
+  color: white;
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 6px;
+  text-shadow: none;
+  box-shadow: none;
+  margin-top: 20px;
+}
