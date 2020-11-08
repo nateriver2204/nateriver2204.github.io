@@ -33,6 +33,7 @@ img {
   width: 100%;
   height: 730px;
 }
+
 .header-navbar {
   position: relative;
   z-index: 1;
@@ -68,8 +69,11 @@ img {
 a {
   text-decoration: none;
 }
+.header-menu-link a:active {
+  color: black;
+}
 .header-menu-link a:hover {
-  color: burlywood;
+  color: #ff817e !important;
 }
 .banner {
   width: 1140px;
@@ -99,11 +103,14 @@ a {
   width: 170px;
   padding: 20px 15px;
 }
+.banner-play-button {
+  color: gray;
+}
 .banner-button:hover {
   color: black;
 }
 .banner-play-button:hover {
-  color: burlywood;
+  color: #ff817e;
 }
 .banner-button,
 .banner-playicon,
@@ -168,7 +175,7 @@ a {
   top: 370px;
 }
 .about-readmore a:hover {
-  color: black;
+  color: black !important;
 }
 .service {
   width: 100%;
