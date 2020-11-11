@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.topbar {
+  height: 50px;
+  background-color: #0c61f2;
+  display: flex;
+}
+.topbar-left {
+  float: left;
+  width: 40%;
+  height: 100%;
+}
+.topbar-logo img {
+  width: 120px;
+  height: 50px;
+  margin-left: 20px;
+}
+.topbar-right {
+  position: absolute;
+  height: 50px;
+  top: 0;
+  right: 0;
+  font-weight: 500;
+}
+.topbar-icon {
+  font-size: 17px;
+  padding: 0 10px;
+  line-height: 50px;
+  color: white;
+  background-color: transparent;
+}
+.sudungtheme,
+.topbar-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.sudungtheme {
+  background-color: #ffb822;
+  border-color: #ffb822;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  padding: 0 10px;
+  font-size: 17px;
+}
