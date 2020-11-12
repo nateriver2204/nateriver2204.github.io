@@ -46,3 +46,46 @@
   padding: 0 10px;
   font-size: 17px;
 }
+.section1 {
+  display: block;
+  background-image: url(background-02-1920x950.jpg);
+  background-color: rgba(255, 255, 255, 0);
+  background-origin: content-box;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: top left;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 666px;
+  position: relative;
+}
+.container {
+  height: 100%;
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  background-color: blueviolet;
+}
+.section1-logo {
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+.section1-box-right {
+  display: block;
+  top: 145px;
+  right: 0;
+  width: 308px;
+  height: 373px;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(20, 84, 140, 0.65);
+}
+.section2 {
+  display: block;
+  width: 100%;
+  height: 614px;
+  position: relative;
+}
