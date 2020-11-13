@@ -766,6 +766,21 @@ body {
   background-size: cover;
   background-position: center center;
 }
+.section5-box1-img:hover {
+  transform: scale(1.2);
+  transition: 0.8s;
+  overflow: hidden;
+}
+.section5-box2-img:hover {
+  transform: scale(1.2);
+  transition: 0.8s;
+  overflow: hidden;
+}
+.section5-box3-img:hover {
+  transform: scale(1.2);
+  transition: 0.8s;
+  overflow: hidden;
+}
 .section6-img1 {
   display: block;
   position: absolute;
@@ -777,6 +792,21 @@ body {
   background-image: url(destination1.jpg);
   background-position: center center;
   background-size: cover;
+}
+.section6-img1 a {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: hidden;
+  display: block;
+  background-color: black;
+  transition: 0.3s;
+}
+.section6-img1:hover a {
+  visibility: visible;
+  opacity: 0.8;
+  color: white;
+  font-size: 30px;
 }
 .section6-img2 {
   display: block;
@@ -790,6 +820,21 @@ body {
   background-position: center center;
   background-size: cover;
 }
+.section6-img2 a {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: hidden;
+  display: block;
+  background-color: black;
+  transition: 0.3s;
+}
+.section6-img2:hover a {
+  visibility: visible;
+  opacity: 0.8;
+  color: white;
+  font-size: 30px;
+}
 .section6-img3 {
   display: block;
   position: absolute;
@@ -802,6 +847,21 @@ body {
   background-position: center center;
   background-size: cover;
 }
+.section6-img3 a {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: hidden;
+  display: block;
+  background-color: black;
+  transition: 0.3s;
+}
+.section6-img3:hover a {
+  visibility: visible;
+  opacity: 0.8;
+  color: white;
+  font-size: 30px;
+}
 .section6-img4 {
   display: block;
   position: absolute;
@@ -813,6 +873,21 @@ body {
   background-image: url(destination4.jpg);
   background-position: center center;
   background-size: cover;
+}
+.section6-img4 a {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: hidden;
+  display: block;
+  background-color: black;
+  transition: 0.3s;
+}
+.section6-img4:hover a {
+  visibility: visible;
+  opacity: 0.8;
+  color: white;
+  font-size: 30px;
 }
 .section6-headline {
   display: block;
@@ -1012,8 +1087,13 @@ body {
   text-align: center;
   height: 35px;
   line-height: 35px;
-  background-color:#f9c001 ;
-  font-family: 'Roboto',sans-serif;
+  background-color: #f9c001;
+  font-family: "Roboto", sans-serif;
 }
-a{text-decoration: none;color: white;}
-a:hover{color: black;}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: black;
+}
