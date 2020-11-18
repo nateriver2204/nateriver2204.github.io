@@ -359,85 +359,85 @@ switch (checkviethoa) {
     alert(checkviethoa + " là kí tự viết thường");
     break;
   case "A":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "B":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "C":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "D":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "E":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "F":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "G":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "H":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(ccheckviethoa + " là kí tự viết hoa");
     break;
   case "I":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "J":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "K":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "L":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "M":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "N":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "O":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "P":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "Q":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "R":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "S":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "T":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "U":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "V":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "W":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "X":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "Y":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   case "Z":
-    alert(checkalphabet + " là kí tự viết hoa");
+    alert(checkviethoa + " là kí tự viết hoa");
     break;
   default:
-    alert(checkalphabet + " không thuuộc bảng chữ cái");
+    alert(checkviethoa + " không thuuộc bảng chữ cái");
 }
 let checkngaytrongtuan = prompt("Nhập ngày trong tuần", "");
 switch (checkngaytrongtuan) {
