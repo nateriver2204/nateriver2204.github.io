@@ -278,13 +278,167 @@ let checkvowel = prompt("Check nguyên - phụ âm", "");
     }
   }
 }
-// let checkviethoa = prompt("Check viết hoa - viết thường", "");
-// let vietthuong = checkviethoa.toUpperCase;
-// if (checkviethoa === vietthuong) {
-//   alert(checkviethoa + " là chữ viết hoa");
-// } else {
-//   alert(checkviethoa + " là chữ viết thường");
-// };
+let checkviethoa = prompt("Check viết hoa - viết thường", "");
+switch (checkviethoa) {
+  case "a":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "b":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "c":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "d":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "e":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "f":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "g":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "h":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "i":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "j":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "k":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "l":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "m":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "n":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "o":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "p":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "q":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "r":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "s":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "t":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "u":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "v":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "w":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "x":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "y":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "z":
+    alert(checkviethoa + " là kí tự viết thường");
+    break;
+  case "A":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "B":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "C":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "D":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "E":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "F":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "G":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "H":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "I":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "J":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "K":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "L":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "M":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "N":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "O":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "P":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "Q":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "R":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "S":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "T":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "U":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "V":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "W":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "X":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "Y":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  case "Z":
+    alert(checkalphabet + " là kí tự viết hoa");
+    break;
+  default:
+    alert(checkalphabet + " không thuuộc bảng chữ cái");
+}
 let checkngaytrongtuan = prompt("Nhập ngày trong tuần", "");
 switch (checkngaytrongtuan) {
   case "1":
@@ -310,4 +464,65 @@ switch (checkngaytrongtuan) {
     break;
   default:
     alert("Số từ 1 đến 7 thôi nhé!");
+}
+let checkngaytrongthang = prompt("Nhập tháng", "");
+switch (checkngaytrongthang) {
+  case "1":
+    alert("Tháng 1 có 31 ngày");
+    break;
+  case "2":
+    alert("Tháng 2 có 28 hoặc 29 ngày");
+    break;
+  case "3":
+    alert("Tháng 3 có 31 ngày");
+    break;
+  case "4":
+    alert("Tháng 4 có 30 ngày");
+    break;
+  case "5":
+    alert("Tháng 5 có 31 ngày");
+    break;
+  case "6":
+    alert("Tháng 6 có 30 ngày");
+    break;
+  case "7":
+    alert("Tháng 7 có 31 ngày");
+    break;
+  case "8":
+    alert("Tháng 8 có 31 ngày");
+    break;
+  case "9":
+    alert("Tháng 9 có 30 ngày");
+    break;
+  case "10":
+    alert("Tháng 10 có 31 ngày");
+    break;
+  case "11":
+    alert("Tháng 11 có 30 ngày");
+    break;
+  case "12":
+    alert("Tháng 12 có 31 ngày");
+    break;
+  default:
+    alert("Số từ 1 đến 12 thôi nhé!");
+}
+let doidiem = prompt("Nhập điểm hệ 10", "");
+if (doidiem < 4) {
+  alert("F");
+} else if (doidiem < 5.5) {
+  alert("D");
+} else if (doidiem < 7) {
+  alert("C");
+} else if (doidiem < 8.5) {
+  alert("B");
+} else {
+  alert("A");
+}
+let tinhluongCN = prompt("Nhập lương cơ bản", "");
+if (tinhluongCN < 2000000) {
+  alert("Lương nhận được = " + tinhluongCN);
+} else if (tinhluongCN >= 5000000) {
+  alert("Lương nhận được =" + tinhluongCN * 1.3);
+} else {
+  alert("Lương nhận được = " + tinhluongCN * 1.15);
 }
