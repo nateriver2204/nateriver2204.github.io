@@ -127,5 +127,26 @@
 // }
 
 //Viet ham cat chuoi theo so tu chi dinh
-const str = "My name is Quang Anh";
-const cut = str.split(" ");
+// const str = "My name is Quang Anh";
+// const cut = str.split(" ");
+
+//Viet ham sao chep array
+// let arr = [1,2,3,4,5,6,7,8,9];
+// let arrfake = [];
+// function copy(){
+//     return arrfake = arr;
+// }
+// console.log(copy());
+
+//Cho 1 mang so, tim gtri lon nhat
+// let arr = [0, 1, 2, 9, 8, 6, 4];
+// function max() {
+//   let max = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//       max = arr[i];
+//     }
+//   }
+//   return max;
+// }
+// console.log(max());
