@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@font-face {
+  font-family: "logo-font";
+  src: url(fonts/Inconsolata/Inconsolata-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "content-font";
+  src: url(fonts/Playfair_Display/PlayfairDisplay-Regular.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "heading-font";
+  src: url(fonts/Ubuntu/Ubuntu-Regular.ttf) format("truetype");
+}
+body {
+  font-family: "content-font";
+}
+h1 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+h2 {
+  font-size: 25px;
+  font-weight: lighter;
+}
+h3 {
+  font-size: 12px;
+  font-family: "heading-font";
+  color: lightgray;
+  font-weight: lighter;
+}
+a {
+  color: black;
+}
+.navbar {
+  max-width: 1066px;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+}
+.menubutton {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 25px;
+  display: none;
+}
+#mbMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+  line-height: 40px;
+  text-align: center;
+  display: none;
+}
+.logo {
+  width: 110px;
+  height: 60px;
+  font-family: "logo-font";
+  font-size: 30px !important;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+.menulinks {
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "content-font";
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1066px;
+  height: max-content;
+  margin: auto;
+}
+.box1 {
+  max-width: 1066px;
+  background-image: url(1.jpg);
+  height: 511px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.box2 {
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 1.4rem;
+  overflow: hidden;
+}
+.box2,
+.box3,
+.box5 {
+  padding: 78px;
+}
+.box3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 110px;
+  column-gap: 60px;
+}
+.box3 div,
+.box5 div {
+  height: 480px;
+  display: flex;
+  font-size: 13px;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.3rem;
+}
+.box4 {
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  height: 287px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+}
+.fa-arrow-alt-circle-right {
+  color: gray;
+  font-size: 25px;
+}
+.input-wrapper {
+  padding: 5px;
+  border-bottom: 2px solid black;
+  width: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-wrapper input {
+  width: 200px;
+  font-size: 15px;
+  line-height: 25px;
+  background-color: rgb(240, 240, 240);
+  border: none;
+  margin-right: 80px;
+  padding: 5px;
+  font-family: "content-font";
+}
+.box5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  height: max-content;
+}
+.box6 {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  padding: 80px;
+}
+.loadmore {
+  border: 1px solid black;
+  width: max-content;
+  margin: auto;
+  line-height: 60px;
+  height: 60px;
+  width: 160px;
+}
+.footer {
+  background-color: rgb(240, 240, 240);
+  height: auto;
+  width: 100%;
+  font-weight: bold;
+}
+.leftfoot {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  margin-right: 20px;
+}
+.footer .container {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.rightfoot {
+  width: 150px;
+  align-items: center;
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  p {
+    font-size: 11px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 10px;
+  }
+  .box3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box5 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .navbar {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .menu {
+    display: none;
+  }
+  .logo {
+    width: calc(100% - 30px);
+  }
+  .navbar {
+    display: block;
+  }
+  .menubutton,
+  .logo {
+    display: inline-block;
+  }
+}
