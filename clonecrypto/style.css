@@ -216,10 +216,11 @@ a {
   position: absolute;
   visibility: hidden;
 }
-.dropdown2 .dropdown1 a {
-  margin-top: 8px;
-}
 .dropdown2 a,
+.dropdown1 a {
+  margin-top: 10px;
+}
+.btc-dropdown-option a,
 .usd-dropdown-option a {
   margin-top: 10px;
 }
