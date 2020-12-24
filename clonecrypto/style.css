@@ -84,6 +84,7 @@ a {
   color: white;
   font-size: 16px;
   padding: 2px 20px 2px 5px;
+  align-items: center;
 }
 .left-box1-heading span {
   background-color: #0fb786;
@@ -139,13 +140,42 @@ a {
   color: darkorange;
 }
 .right-box1 {
-  height: 450px;
+  height: 460px;
   background-color: white;
   width: 460px;
-  padding: 40px;
+  padding: 30px 40px;
   display: flex;
   flex-direction: column;
 }
+.irs--big .irs-bar {
+  background: #99d979;
+}
+.irs--big .irs-handle {
+  width: 25px;
+  height: 25px;
+  background: #71d07d;
+  border: none;
+}
+.irs-grid .irs-grid-text {
+  color: #9a9a9a;
+  font-weight: 500;
+}
+.irs--big .irs-grid-pol {
+  background-color: #9a9a9a;
+}
+.irs--big .irs-grid-pol.small {
+  display: none;
+}
+.irs--big .irs-min,
+.irs--big .irs-max,
+.irs-single {
+  display: none;
+}
+.usd {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 .right-box1-button {
   width: 100%;
   height: 47px;
@@ -153,12 +183,60 @@ a {
   box-shadow: 0px 0px 10px rgba(71, 71, 71, 0.1);
   text-align: center;
   line-height: 47px;
+  margin-top: 10px;
 }
 .right-box1-button a {
   color: white;
   font-size: 16px;
 }
-
+.usd,
+.btc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px 20px 30px;
+}
+.dropdown1,
+.dropdown2,
+.usd-dropdown-option,
+.btc-dropdown-option {
+  display: flex;
+  width: 90px;
+  height: 40px;
+  background-color: #e8f7fe;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.usd-dropdown-option,
+.btc-dropdown-option {
+  border: 1px solid rgba(71, 71, 71, 0.1);
+  position: absolute;
+  visibility: hidden;
+}
+.dropdown2 .dropdown1 a {
+  margin-top: 8px;
+}
+.dropdown2 a,
+.usd-dropdown-option a {
+  margin-top: 10px;
+}
+.dropdown1:hover ~ .usd-dropdown-option,
+.dropdown2:hover ~ .btc-dropdown-option {
+  visibility: visible;
+}
+.middle {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.middle a {
+  margin-top: 3px;
+  margin-right: 20px;
+}
 .box2 {
   padding-top: 75px;
   padding-bottom: 75px;

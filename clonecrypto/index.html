@@ -6,6 +6,22 @@
     <title>Crypto</title>
     <link rel="shortcut icon" href="twitterlogo.png" type="image/x-icon" />
     <!-- range Slider CSS -->
+    <!--Plugin CSS file with desired skin-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <!-- fontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/4e96093f1f.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- My CSS file -->
     <link rel="stylesheet" href="style.css" />
@@ -45,10 +61,79 @@
           </div>
         </div>
         <div class="right-box1">
-          <div class="slider"></div>
-          <div class="usd"></div>
-          <div class="middle"></div>
-          <div class="btc"></div>
+          <div class="slider">
+            <input
+              type="text"
+              class="js-range-slider"
+              name="my_range"
+              value=""
+              id="demo_6"
+            />
+          </div>
+          <script>
+            $("#demo_6").ionRangeSlider({
+              skin: "big",
+              grid: true,
+              from: 0.01,
+              values: [
+                0.01,
+                0.15,
+                0.25,
+                0.35,
+                0.45,
+                0.45,
+                0.6,
+                0.8,
+                0.93,
+                1,
+                1.15,
+                1.15,
+              ],
+            });
+          </script>
+          <div class="usd">
+            <p style="font-weight: 600; font-size: 16px">$200</p>
+            <div class="usd-dropdown-wrapper">
+              <div class="dropdown1">
+                <a href="#"
+                  ><img src="United States of America.png" alt=""
+                /></a>
+                <p>USD</p>
+                <i class="fas fa-caret-down"></i>
+              </div>
+              <div class="usd-dropdown-option">
+                <a href="#"><img src="BTC.png" alt="" /></a>
+                <p style="margin-right: 18px">BTC</p>
+              </div>
+            </div>
+          </div>
+          <div class="middle">
+            <a href="#"><img src="Dots.png" alt="" /></a>
+            <p style="color: #9b9b9b">
+              For
+              <span style="color: black; font-weight: 600">200 USD</span> you
+              will get
+              <span style="color: black; font-weight: 600"
+                >0.75454 Bitcoin</span
+              >
+            </p>
+          </div>
+          <div class="btc">
+            <p style="font-weight: 600; font-size: 16px">0.75454</p>
+            <div class="btc-dropdown-wrapper">
+              <div class="dropdown2">
+                <a href="#"><img src="BTC.png" alt="" /></a>
+                <p>BTC</p>
+                <i class="fas fa-caret-down"></i>
+              </div>
+              <div class="btc-dropdown-option">
+                <a href="#"
+                  ><img src="United States of America.png" alt=""
+                /></a>
+                <p style="margin-right: 18px">USD</p>
+              </div>
+            </div>
+          </div>
           <div class="right-box1-button">
             <a href="#">Continue </a>
           </div>
