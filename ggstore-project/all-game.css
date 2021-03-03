@@ -1,0 +1,124 @@
+.main-content-wrapper {
+  max-width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  /* height: 500px; */
+}
+.games-wrapper {
+  width: 76%;
+  height: 100%;
+}
+.filter-wrapper {
+  width: 22%;
+  height: 100%;
+}
+.accordion {
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-bottom: 1px solid #777;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+.accordion.active,
+.accordion:hover {
+  background-color: rgb(214, 214, 214);
+  color: #e93434;
+}
+.active .fa-angle-up {
+  transform: rotate(180deg);
+  transition: 0.2s;
+}
+.filter-wrapper ul {
+  padding: 10px 0 0 10px;
+  display: none;
+  overflow: hidden;
+}
+.filter-wrapper ul li {
+  font-size: 14px;
+}
+.filter-wrapper ul li:not(:first-child) {
+  padding-top: 10px;
+}
+.containerr:nth-child(2) {
+  align-items: baseline;
+}
+.game-content {
+  margin-top: 20px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 15px;
+  row-gap: 40px;
+}
+.game-content img {
+  border-radius: 4px;
+}
+.game-content a {
+  color: black;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.game-content a:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.game-header-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.game-header-filter a {
+  text-decoration: none;
+  color: #999;
+}
+.filter-toggle-btn {
+  width: 24px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+.filter-toggle-btn .line {
+  background-color: black;
+  height: 4px;
+  border-radius: 20px;
+}
+.filter-toggle-btn .line:not(:first-child) {
+  margin-top: 3px;
+}
+.game-header-filter a:hover {
+  color: #e93434;
+}
+@media (max-width: 1100px) {
+  .main-content-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .filter-wrapper {
+    display: none;
+  }
+  .filter-toggle-btn {
+    display: flex;
+  }
+  .games-wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .game-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}

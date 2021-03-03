@@ -1,0 +1,268 @@
+/* big-carousel */
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  height: 475px;
+  justify-content: space-evenly;
+  background-color: #393939;
+  overflow: hidden;
+}
+.thumbnails li {
+  flex: auto;
+  list-style: none;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.thumbnails li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.thumbnails p {
+  font-size: 12px;
+}
+.thumbnails img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.slides {
+  overflow: hidden;
+  width: 80%;
+  height: 475px;
+  position: relative;
+}
+.slides li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  list-style: none;
+}
+.slides img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.slides li:target {
+  z-index: 3;
+  animation: slide 1s 1;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* new-release */
+.new-release-wrapper,
+.game-hot-wrapper,
+.free-game-wrapper,
+.top-seller-wrapper,
+.banner-wrapper,
+.new-update-wrapper,
+.coming-soon-wrapper,
+.catalog-wrapper {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.new-release-headline {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.new-release-btn {
+  background-color: #e93434;
+  width: 70px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 2px;
+}
+.new-release-btn a {
+  font-size: 10px;
+  color: white;
+}
+.owl-carousel {
+  max-width: 1080px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.owl-carousel a,
+.game-hot a,
+.game-sph a {
+  color: black;
+}
+/* free-game */
+.free-game-wrapper {
+  background-color: #494747;
+  max-width: 1080px;
+  margin-top: 40px;
+  padding: 20px;
+}
+.free-game-wrapper .containerr {
+  align-items: baseline;
+}
+.free-game-heading-left {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.free-game-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.free-game-btn {
+  width: 80px;
+  height: 25px;
+  background-color: #e93434;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 2px;
+}
+.free-games {
+  width: 49%;
+}
+.free-game-btn a,
+.readmore-btn a,
+.playnow-btn a,
+.catalog-btn a {
+  font-size: 10px;
+  color: white;
+}
+/* Game hot */
+.game-hot-wrapper .containerr {
+  align-items: baseline;
+}
+.game-hot,
+.game-sph {
+  width: 32%;
+}
+.game-hot a p,
+.game-sph a p,
+.free-games a p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* top-seller */
+/* banner1 */
+.banner-wrapper,
+.catalog-wrapper {
+  margin-top: 40px;
+}
+.monkey {
+  background-color: #f3dd22;
+  margin-top: 20px;
+  background-image: url(images/image\ 3.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  margin: 100px 40px;
+}
+.readmore-btn {
+  background-color: #e93434;
+  width: 130px;
+  height: 30px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.readmore-btn:hover {
+  opacity: 0.8;
+}
+/* New Update */
+/* banner2 */
+.auto-chess {
+  background-color: #353b4d;
+  margin-top: 20px;
+  background-image: url(images/image\ 7.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.playnow-btn {
+  background-color: #e93434;
+  width: 160px;
+  height: 36px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+.playnow-btn:hover {
+  opacity: 0.8;
+}
+/* Coming Soon */
+.coming-soon-wrapper .containerr {
+  align-items: baseline;
+}
+/* Catalog */
+.catalog {
+  margin-top: 20px;
+  background: rgb(24, 56, 199);
+  background-image: url(images/image\ 5.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.catalog-btn {
+  background-color: #e93434;
+  width: 160px;
+  height: 36px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+.catalog-btn:hover {opacity: 0.8;}
+@media (max-width: 1200px) {
+  .free-game-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 900px) {
+  .big-carousel-wrapper {
+    display: none;
+  }
+  .new-release-wrapper {
+    margin-top: 0;
+  }
+}
+@media (max-width: 650px) {
+  .monkey .banner-content,
+  .auto-chess .banner-content,.catalog .banner-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    align-items: center;
+  }
+  .catalog-btn {background-color: #e93434;}
+  .monkey,
+  .catalog,
+  .auto-chess {
+    background-size: cover;
+    background-position: center center;
+  }
+}
