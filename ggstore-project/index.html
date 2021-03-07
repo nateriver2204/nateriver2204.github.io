@@ -46,8 +46,8 @@
       crossorigin="anonymous"
     />
     <!-- My CSS -->
-    <link rel="stylesheet" href="all-style.css" />
-    <link rel="stylesheet" href="index-style.css" />
+    <link rel="stylesheet" href="css/all-style.css" />
+    <link rel="stylesheet" href="css/index-style.css" />
     <!-- My Js -->
     <script src="script.js" defer></script>
   </head>
@@ -86,21 +86,72 @@
         <div class="navbarr-links">
           <ul>
             <li>
-              <a href="#">
-                <div class="login-btn">
+              <a href="#" class="signup-btn">
+                <div style="display: flex; align-items: center">
                   <i class="fas fa-user" style="margin-right: 0.5rem"></i>
                   <p>Đăng ký</p>
                 </div>
               </a>
             </li>
             <li>
-              <a href="#" style="background-color: #e93434">Đăng nhập </a>
+              <a href="#" class="login-btn" style="background-color: #e93434"
+                >Đăng nhập
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
     <!-- /NavBar -->
+    <!-- SignUp - SignIn Form -->
+    <div id="overlay" class="overlay"></div>
+    <form class="form-wrapper" id="sign-up" method="GET">
+      <div id="close-su-btn">&times;</div>
+      <div class="form-logo">
+        <i
+          class="fab fa-gitkraken fa-2x"
+          id="logo"
+          style="color: #e93434; margin-right: 15px"
+        ></i>
+        <p><span style="color: #e93434">GG</span>Store</p>
+      </div>
+      <a id="swap-li">Đăng nhập ngay</a>
+    </form>
+    <form class="form-wrapper" id="sign-in" method="GET">
+      <div id="close-li-btn">&times;</div>
+      <div class="form-logo">
+        <i
+          class="fab fa-gitkraken fa-2x"
+          id="logo"
+          style="color: #e93434; margin-right: 15px"
+        ></i>
+        <p><span style="color: #e93434">GG</span>Store</p>
+      </div>
+      <div>
+        ĐĂNG NHẬP BẰNG TÀI KHOẢN <span style="color: #e93434">GG</span>STORE
+      </div>
+      <div>
+        <input
+          type="email"
+          name=""
+          id=""
+          placeholder="Email hoặc số điện thoại"
+        />
+      </div>
+      <div><input type="password" name="" id="" placeholder="Mật khẩu" /></div>
+      <div>
+        <input type="checkbox"> <span>Lưu tài khoản</span>
+        <a>Quên mật khẩu?</a>
+      </div>
+      <div>
+        <a href="index.html">Đăng Nhập</a>
+      </div>
+      <div>Điều khoản bảo mật
+      </div>
+      <div> <span>Chưa có tài khoản GG Store?</span>
+      <a id="swap-su">Đăng ký ngay</a></div>
+    </form>
+    <!-- /SignUp - SignIn Form -->
     <!-- Search -->
     <div class="search-wrapper">
       <div class="containerr">
@@ -321,7 +372,7 @@
     <!-- Banner1 -->
     <div class="banner-wrapper">
       <div class="containerr">
-        <p>Phát Hành Ngày 9/2</p>
+        <p>Phát Hành Ngày 22/4</p>
       </div>
       <div class="containerr monkey">
         <div class="banner-content">
@@ -505,24 +556,18 @@
       </div>
       <div class="footer-container">
         <div class="resource-content">
-          <p style="font-weight: bold; color: black; margin-bottom: 5px">
-            GGSTORE
-          </p>
+          <p style="font-weight: bold; margin-bottom: 5px">GGSTORE</p>
           <p>Game bản quyền là gì?</p>
           <p>Giới thiệu về GGStore</p>
         </div>
         <div class="resource-content">
-          <p style="font-weight: bold; color: black; margin-bottom: 5px">
-            TÀI KHOẢN
-          </p>
+          <p style="font-weight: bold; margin-bottom: 5px">TÀI KHOẢN</p>
           <p>Đăng ký</p>
           <p>Sản phẩm đã mua</p>
           <p>Chế độ bảo hành</p>
         </div>
         <div class="resource-content">
-          <p style="font-weight: bold; color: black; margin-bottom: 5px">
-            LIÊN HỆ
-          </p>
+          <p style="font-weight: bold; margin-bottom: 5px">LIÊN HỆ</p>
           <p>Địa chỉ giao dịch trực tiếp</p>
           <p>Hotline: (+84) 97 879 25 46</p>
           <p>Email: nateriver2204@gmail.com</p>
@@ -577,6 +622,54 @@
         $(".search-icon").click(function () {
           $(".search-rightbox").toggleClass("active");
         });
+      });
+    </script>
+    <!-- form pop up -->
+    <script>
+      let closeSUForm = document.getElementById("close-su-btn");
+      let closeLIForm = document.getElementById("close-li-btn");
+      let overLay = document.querySelector(".overlay");
+      let openSUForm = document.querySelector(".signup-btn");
+      let openLGForm = document.querySelector(".login-btn");
+      let signUp = document.getElementById("sign-up");
+      let signIn = document.getElementById("sign-in");
+      let swapSu = document.getElementById("swap-su");
+      let swapLi = document.getElementById("swap-li");
+
+      swapSu.addEventListener("click", () => {
+        signUp.classList.add("active");
+        signIn.classList.remove("active");
+      });
+
+      swapLi.addEventListener("click", () => {
+        signIn.classList.add("active");
+        signUp.classList.remove("active");
+      });
+
+      openLGForm.addEventListener("click", () => {
+        overLay.classList.toggle("active");
+        signIn.classList.toggle("active");
+      });
+
+      openSUForm.addEventListener("click", () => {
+        overLay.classList.toggle("active");
+        signUp.classList.toggle("active");
+      });
+
+      closeSUForm.addEventListener("click", () => {
+        overLay.classList.toggle("active");
+        signUp.classList.toggle("active");
+      });
+
+      closeLIForm.addEventListener("click", () => {
+        overLay.classList.toggle("active");
+        signIn.classList.toggle("active");
+      });
+
+      overLay.addEventListener("click", () => {
+        overLay.classList.toggle("active");
+        signIn.classList.remove("active");
+        signUp.classList.remove("active");
       });
     </script>
   </body>

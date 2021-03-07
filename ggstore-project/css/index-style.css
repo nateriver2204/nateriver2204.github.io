@@ -1,3 +1,73 @@
+/* form */
+#overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  transform: scale(0);
+  pointer-events: none;
+}
+#overlay.active {
+  transform: scale(1);
+  pointer-events: all;
+}
+#sign-up {
+  max-width: 500px;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 500ms ease-in-out;
+  height: 70%;
+}
+#sign-up.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 500ms ease-in-out;
+}
+#sign-in {
+  max-width: 500px;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 500ms ease-in;
+  height: 60%;
+}
+#sign-in.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 500ms ease-in;
+}
+#close-su-btn,
+#close-li-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.form-wrapper {
+  padding: 50px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px;
+}
+.form-logo {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
 /* big-carousel */
 .thumbnails {
   display: flex;
@@ -171,7 +241,7 @@
 .monkey {
   background-color: #f3dd22;
   margin-top: 20px;
-  background-image: url(images/image\ 3.png);
+  background-image: url(image\ 3.png);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -199,7 +269,7 @@
 .auto-chess {
   background-color: #353b4d;
   margin-top: 20px;
-  background-image: url(images/image\ 7.png);
+  background-image: url(image\ 7.png);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -223,7 +293,7 @@
 .catalog {
   margin-top: 20px;
   background: rgb(24, 56, 199);
-  background-image: url(images/image\ 5.png);
+  background-image: url(image\ 5.png);
   background-position: right;
   background-repeat: no-repeat;
 }
@@ -236,7 +306,9 @@
   line-height: 36px;
   margin-bottom: 20px;
 }
-.catalog-btn:hover {opacity: 0.8;}
+.catalog-btn:hover {
+  opacity: 0.8;
+}
 @media (max-width: 1200px) {
   .free-game-wrapper {
     padding-left: 0;
@@ -253,12 +325,15 @@
 }
 @media (max-width: 650px) {
   .monkey .banner-content,
-  .auto-chess .banner-content,.catalog .banner-content {
+  .auto-chess .banner-content,
+  .catalog .banner-content {
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     align-items: center;
   }
-  .catalog-btn {background-color: #e93434;}
+  .catalog-btn {
+    background-color: #e93434;
+  }
   .monkey,
   .catalog,
   .auto-chess {

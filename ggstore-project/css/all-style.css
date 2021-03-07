@@ -86,13 +86,6 @@ img {
   border-radius: 10px;
   background-color: white;
 }
-.login-btn {
-  display: flex;
-  align-items: center;
-}
-.signup-btn {
-  background-color: #e93434;
-}
 
 @media (max-width: 800px) {
   .toggle-btnn {
@@ -118,6 +111,9 @@ img {
   }
   .navbarr-links li a {
     padding: 0.5rem 1rem;
+  }
+  .signup-btn div {
+    justify-content: center;
   }
   .login-btn {
     justify-content: center;
@@ -225,7 +221,7 @@ img {
 }
 /* footer */
 .footer-wrapper {
-  background-color: #b7b3b3;
+  background-color: black;
   width: 100%;
   margin-top: 100px;
   padding-left: 50px;
@@ -258,6 +254,7 @@ img {
 }
 .service-content {
   margin-left: 5px;
+  color: white;
 }
 .resource-content {
   width: 200px;
