@@ -1,14 +1,6 @@
 body {
   background-color: rgb(8, 44, 48);
 }
-.search-rightbox {
-  background-color: white;
-}
-.search-leftbox {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 .carousel-wrapper {
   max-width: 1080px;
   margin: 0 auto;
@@ -310,6 +302,12 @@ body {
   }
   .current-page {
     display: none;
+  }
+  .editions-flexrow div:last-child {
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
   .editions-row div img {
     width: 100%;

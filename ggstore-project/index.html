@@ -115,7 +115,53 @@
         ></i>
         <p><span style="color: #e93434">GG</span>Store</p>
       </div>
-      <a id="swap-li">Đăng nhập ngay</a>
+      <div style="margin: 30px 0 20px 0; font-weight: 500">ĐĂNG KÝ</div>
+      <div class="form-flexrow">
+        <input
+          type="text"
+          placeholder="*Họ và đệm"
+          style="margin-right: 15px"
+        />
+        <input type="text" placeholder="*Tên" />
+      </div>
+      <div>
+        <input type="text" placeholder="*Tên hiển thị" />
+      </div>
+      <div>
+        <input type="email" placeholder="*Địa chỉ Email" />
+      </div>
+      <div>
+        <input type="password" placeholder="*Mật khẩu" />
+      </div>
+      <div class="form-flexrow">
+        <input type="checkbox" id="nhantt" />
+        <label for="nhantt"
+          >Tôi muốn nhận tin tức, quảng cáo, khuyến mãi từ GGSTORE</label
+        >
+      </div>
+      <div class="form-flexrow">
+        <input type="checkbox" id="dksd" />
+        <label for="dksd"
+          >Tôi đã đọc kĩ và đồng ý với
+          <a style="color: #e93434; cursor: pointer">
+            Điều khoản sử dụng</a
+          ></label
+        >
+      </div>
+      <a href="index.html" class="dangky-btn"> ĐĂNG KÝ </a>
+      <div style="width: 100%; text-align: center; margin-bottom: 5px">
+        <a href="" style="color: black; text-decoration: none"
+          >Điều khoản bảo mật</a
+        >
+      </div>
+      <div style="width: 100%; text-align: center">
+        <span style="color: rgba(128, 128, 128, 0.815)"
+          >Đã có tài khoản GGStore?</span
+        >
+        <a id="swap-li" style="cursor: pointer; color: #e93434"
+          >Đăng nhập ngay</a
+        >
+      </div>
     </form>
     <form class="form-wrapper" id="sign-in" method="GET">
       <div id="close-li-btn">&times;</div>
@@ -127,10 +173,10 @@
         ></i>
         <p><span style="color: #e93434">GG</span>Store</p>
       </div>
-      <div>
+      <div style="margin: 30px 0 20px 0; font-weight: 500">
         ĐĂNG NHẬP BẰNG TÀI KHOẢN <span style="color: #e93434">GG</span>STORE
       </div>
-      <div>
+      <div style="width: 100%">
         <input
           type="email"
           name=""
@@ -139,17 +185,27 @@
         />
       </div>
       <div><input type="password" name="" id="" placeholder="Mật khẩu" /></div>
-      <div>
-        <input type="checkbox"> <span>Lưu tài khoản</span>
-        <a>Quên mật khẩu?</a>
+      <div class="form-flexrow" style="font-size: 0.8rem">
+        <span
+          ><input type="checkbox" name="luutk" id="luutk" />
+          <label for="luutk" style="cursor: pointer">Lưu tài khoản</label>
+        </span>
+        <a href="" style="color: black; text-decoration: none"
+          >Quên mật khẩu?</a
+        >
       </div>
-      <div>
-        <a href="index.html">Đăng Nhập</a>
+      <a href="index.html" class="dangnhap-btn"> ĐĂNG NHẬP </a>
+      <div style="width: 100%; text-align: center; margin-bottom: 5px">
+        <a href="" style="color: black; text-decoration: none"
+          >Điều khoản bảo mật</a
+        >
       </div>
-      <div>Điều khoản bảo mật
+      <div style="width: 100%; text-align: center">
+        <span style="color: rgba(128, 128, 128, 0.815)"
+          >Chưa có tài khoản GGStore?</span
+        >
+        <a id="swap-su" style="cursor: pointer; color: #e93434">Đăng ký ngay</a>
       </div>
-      <div> <span>Chưa có tài khoản GG Store?</span>
-      <a id="swap-su">Đăng ký ngay</a></div>
     </form>
     <!-- /SignUp - SignIn Form -->
     <!-- Search -->

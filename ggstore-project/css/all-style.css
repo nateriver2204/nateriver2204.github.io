@@ -159,7 +159,8 @@ img {
   overflow: hidden;
 }
 .search-rightbox {
-  position: relative;
+  position: absolute;
+  right: 0;
   width: 40px;
   height: 40px;
   box-shadow: 0 5px 20px rgba (0, 0, 0, 0.5);
@@ -167,6 +168,7 @@ img {
   overflow: hidden;
   border: 1px solid black;
   border-radius: 4px;
+  background-color: white;
 }
 .search-rightbox.active {
   width: 250px;
@@ -300,5 +302,14 @@ img {
   }
   .footer-container {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 325px) {
+  .footer-container:last-child {
+    flex-direction: column;
+  }
+  .footer-container:last-child p {
+    margin: 0 !important;
   }
 }
