@@ -86,15 +86,17 @@
         <div class="navbarr-links">
           <ul>
             <li>
-              <a href="#">
-                <div class="login-btn">
+              <a href="#" class="signup-btn">
+                <div style="display: flex; align-items: center">
                   <i class="fas fa-user" style="margin-right: 0.5rem"></i>
                   <p>Đăng ký</p>
                 </div>
               </a>
             </li>
             <li>
-              <a href="#" style="background-color: #e93434">Đăng nhập </a>
+              <a href="#" class="login-btn" style="background-color: #e93434"
+                >Đăng nhập
+              </a>
             </li>
           </ul>
         </div>
@@ -102,53 +104,128 @@
     </div>
     <!-- /NavBar -->
     <!-- Main -->
-    <div id="overlay">
-      <div class="checkout-form-wrapper" id="checkout-form-wrapper">
-        <div class="checkout-main">
-          <div class="main-header">
-            <p>PHƯƠNG THỨC THANH TOÁN</p>
-            <p>MUA HÀNG</p>
-          </div>
+    <div id="overlay"></div>
+    <div class="checkout-form-wrapper" id="checkout-form-wrapper">
+      <div class="checkout-main">
+        <div class="main-header">
+          <div id="pttt">PHƯƠNG THỨC THANH TOÁN</div>
+          <div id="muahang">MUA HÀNG</div>
         </div>
-        <div class="checkout-sidebar">
-          <div class="sidebar-header">
-            <div class="sidebar-title">GIỎ HÀNG</div>
-            <a class="close-button">&times;</a>
-          </div>
-          <div class="sidebar-content">
-            <div class="product-row">
-              <img
-                src="images/checkout-img.jpg"
-                alt=""
-                style="margin-right: 30px"
+        <div style="margin: 20px 0; font-weight: 500">
+          CHỌN PHƯƠNG THỨC THANH TOÁN
+        </div>
+        <label class="accordion" id="credit-card">
+          <span style="display: flex; align-items: center">
+            <div class="checkbox"></div>
+            <img src="images/visa.png" alt="" />
+            <p>Credit Card</p></span
+          >
+          <form id="hide-form" class="">
+            <div style="margin-top: 10px; font-weight: 500">THÔNG TIN THẺ</div>
+            <div>
+              <input
+                type="number"
+                placeholder="*Số thẻ"
+                autofocus
+                maxlength="12"
               />
-              <div>
-                <p><b>Kena: Bridge of Spirits</b></p>
-                <p>By Ember Lab</p>
-              </div>
-            </div>
-            <div class="product-row" style="margin: 30px 0">
-              <div>Giá</div>
-              <div>$15.99</div>
-            </div>
-            <div class="product-row" style="margin-bottom: 50px">
-              <div>Tổng tiền</div>
-              <div>$15.99</div>
             </div>
             <div
-              class="product-row"
               style="
-                margin-top: 50px;
-                margin-bottom: 150px;
-                border-top: 1px solid gray;
-                padding-top: 15px;
+                width: 100%;
+                max-width: 300px;
+                display: flex;
+                justify-content: space-between;
               "
             >
-              <div>Thanh toán</div>
-              <div>$15.99</div>
+              <select name="months" id="months">
+                <option value="*Tháng">*Tháng</option>
+                <option value="Tháng 1">01</option>
+                <option value="Tháng 2">02</option>
+                <option value="Tháng 3">03</option>
+                <option value="Tháng 4">04</option>
+                <option value="Tháng 5">05</option>
+                <option value="Tháng 6">06</option>
+                <option value="Tháng 7">07</option>
+                <option value="Tháng 8">08</option>
+                <option value="Tháng 9">09</option>
+                <option value="Tháng 10">10</option>
+                <option value="Tháng 11">11</option>
+                <option value="Tháng 12">12</option>
+              </select>
+              <select name="years" id="years">
+                <option value="*Tháng">*Năm</option>
+                <option value="Năm 2021">2021</option>
+                <option value="Năm 2022">2022</option>
+                <option value="Năm 2023">2023</option>
+                <option value="Năm 2024">2024</option>
+                <option value="Năm 2025">2025</option>
+                <option value="Năm 2026">2026</option>
+                <option value="Năm 2027">2027</option>
+                <option value="Năm 2028">2028</option>
+                <option value="Năm 2029">2029</option>
+                <option value="Năm 2030">2030</option>
+                <option value="Năm 2031">2031</option>
+              </select>
             </div>
-            <a class="checkout-btn" href="">TIẾP THEO</a>
+            <div>
+              <input type="number" min="000" max="999" placeholder="*CVV" />
+            </div>
+          </form>
+        </label>
+
+        <label class="accordion" id="paypal">
+          <span style="display: flex; align-items: center">
+            <div class="checkbox"></div>
+            <img src="images/paypal.png" alt="" />
+            <p>Paypal</p></span
+          >
+        </label>
+      </div>
+      <div class="checkout-sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-title">GIỎ HÀNG</div>
+          <a class="close-button" href="product-page.html">&times;</a>
+        </div>
+        <div class="sidebar-content">
+          <div class="product-row">
+            <img
+              src="images/checkout-img.jpg"
+              alt=""
+              style="margin-right: 30px"
+            />
+            <div>
+              <p>Kena: Bridge of Spirits</p>
+              <p style="color: #999">By Ember Lab</p>
+            </div>
           </div>
+          <div
+            class="product-row"
+            style="
+              margin: 10px 0;
+              border-bottom: 1px solid gray;
+              padding: 15px 0;
+            "
+          >
+            <div style="color: #999">Giá</div>
+            <div>$15.99</div>
+          </div>
+          <div class="product-row" style="margin: 10px 0">
+            <div style="color: #999">Tổng tiền</div>
+            <div>$15.99</div>
+          </div>
+          <div
+            class="product-row"
+            style="
+              margin: 10px 0 150px 0;
+              border-bottom: 1px solid gray;
+              padding: 15px 0;
+            "
+          >
+            <div style="font-weight: bold">Thanh toán</div>
+            <div>$15.99</div>
+          </div>
+          <a class="checkout-btn" href="">TIẾP THEO</a>
         </div>
       </div>
     </div>
@@ -166,52 +243,20 @@
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous"
     ></script>
-    <!-- pop up -->
+    <!-- chon pttt -->
     <script>
-      const openCheckoutWrapper = document.querySelectorAll(
-        "[data-checkout-target"
-      );
-      const closeCheckoutWrapper = document.querySelectorAll(
-        "[data-close-button"
-      );
-      const overlay = document.getElementById("overlay");
-
-      openCheckoutWrapper.forEach((button) => {
-        button.addEventListener("click", () => {
-          const checkoutForm = document.querySelector(
-            button.dataset.checkoutTarget
-          );
-          openCheckoutForm(checkoutForm);
-        });
+      let acc1 = document.getElementById("credit-card");
+      let acc2 = document.getElementById("paypal");
+      let hideForm = document.querySelector("#hide-form");
+      acc1.addEventListener("click", () => {
+        acc1.querySelector(".checkbox").classList.add("active");
+        acc2.querySelector(".checkbox").classList.remove("active");
+        hideForm.classList.toggle("active");
       });
-
-      overlay.addEventListener("click", () => {
-        const forms = document.querySelectorAll(
-          ".checkout-form-wrapper.active"
-        );
-        forms.forEach((checkoutForm) => {
-          closeCheckoutForm(checkoutForm);
-        });
+      acc2.addEventListener("click", () => {
+        acc2.querySelector(".checkbox").classList.add("active");
+        acc1.querySelector(".checkbox").classList.remove("active");
       });
-
-      closeCheckoutWrapper.forEach((button) => {
-        button.addEventListener("click", () => {
-          const checkoutForm = button.closest(".checkout-form-wrapper");
-          closeCheckoutForm(checkoutForm);
-        });
-      });
-
-      function openCheckoutForm(checkoutForm) {
-        if (checkoutForm == null) return;
-        checkoutForm.classList.add("active");
-        overlay.classList.add("active");
-      }
-
-      function closeCheckoutForm(checkoutForm) {
-        if (checkoutForm == null) return;
-        checkoutForm.classList.remove("active");
-        overlay.classList.remove("active");
-      }
     </script>
   </body>
 </html>

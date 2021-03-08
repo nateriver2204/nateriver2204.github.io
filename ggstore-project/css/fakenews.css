@@ -3,6 +3,7 @@
   margin: 0 auto;
 }
 .containerr:first-child {
+  margin: 0 auto;
   font-size: 14px;
   font-weight: 500;
   padding: 40px 0;
@@ -36,16 +37,13 @@
     height: 350px;
   }
 }
-@media (max-width: 700px) {
-  .containerr:first-child {
-    width: calc(100vw - 20px);
-  }
-}
+
 @media (max-width: 600px) {
   .containerr:first-child {
     font-size: 0.8rem;
     padding-top: 20px;
     padding-bottom: 20px;
+    flex-wrap: wrap;
   }
   h4 {
     font-size: 18px;

@@ -3,14 +3,16 @@ body {
 }
 .checkout-form-wrapper {
   max-width: 1000px;
+  width: 100%;
   margin: auto;
   background-color: white;
   z-index: 10;
   display: flex;
+  position: relative;
 }
 .checkout-main {
   width: 70%;
-  padding: 10px 15px;
+  padding: 0 20px;
 }
 .checkout-sidebar {
   width: 30%;
@@ -20,6 +22,105 @@ body {
 /* maincontent */
 .main-header {
   display: flex;
+  align-items: center;
+  color: black;
+  height: 60px;
+  font-weight: 500;
+}
+#pttt {
+  border-bottom: 5px solid #e93434;
+}
+#muahang {
+  border-bottom: 1px solid gray;
+  color: #999;
+}
+#muahang.active {
+  border-bottom: 5px solid #e93434;
+  color: black;
+}
+.main-header div {
+  width: 50%;
+  height: 100%;
+  line-height: 60px;
+}
+
+.accordion {
+  width: 100%;
+  padding: 5px 20px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.accordion:hover {
+  transition: 0.2s;
+  box-shadow: 2px 4px rgba(113, 113, 113, 0.4);
+}
+.accordion input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+#credit-card img {
+  width: 60px;
+  margin: 0 50px;
+}
+#paypal {
+  margin-top: 10px;
+}
+#paypal img {
+  width: 80px;
+  margin: 0 40px;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: relative;
+}
+
+.checkbox.active {
+  background-color: #e93434;
+}
+
+#hide-form input[type="number"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 0.85rem;
+  margin: 10px 0;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background-color: #d6d6d6;
+}
+#hide-form input[type="number"]:focus {
+  border: 1px solid gray;
+  background-color: white;
+}
+#hide-form #months,
+#hide-form #years {
+  width: 48%;
+  padding: 10px;
+  font-size: 0.85rem;
+  margin: 10px 0;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background-color: #d6d6d6;
+  cursor: pointer;
+}
+#hide-form #months:focus,
+#hide-form #years:focus {
+  background-color: white;
+}
+#hide-form {
+  display: none;
+  transition: 0.5s;
+}
+#hide-form.active {
+  display: block;
+  transition: 0.5s;
 }
 /* sidebar */
 .checkout-sidebar a {
@@ -30,7 +131,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
   padding: 20px 15px 10px 15px;
+  font-weight: 600;
 }
 .sidebar-header .close-button {
   cursor: pointer;
@@ -69,5 +172,5 @@ body {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 10;
 }

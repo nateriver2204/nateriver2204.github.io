@@ -242,7 +242,7 @@ body {
 }
 @media (max-width: 1100px) {
   .smallgrid {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr;
   }
   .introduce-wrapper,
   .followus-wrapper,
@@ -340,4 +340,9 @@ body {
     margin-left: 30px;
     margin-right: 30px;
   }
+  .search-leftbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .smallgrid {column-gap: 10px;}
 }
