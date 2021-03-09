@@ -102,7 +102,11 @@
 .game-header-filter a:hover {
   color: #e93434;
 }
-.search-leftbox a:hover {color: #e93434 !important;}
+.game-content a p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: wrap;
+}
 @media (max-width: 1100px) {
   .main-content-wrapper {
     padding-left: 20px;

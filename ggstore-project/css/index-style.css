@@ -71,7 +71,7 @@
 #sign-in div input[type="password"] {
   width: 100%;
   border-radius: 4px;
-  background-color: rgba(215, 215, 215, 0.6);
+  background-color: white;
   font-size: 0.9rem;
   border: 1px solid gray;
   outline: none;
@@ -80,7 +80,7 @@
 #sign-in div input:focus {
   background-color: transparent;
   outline: none;
-  border: 1px solid black;
+  border: 2px solid gray;
 }
 #sign-in div input[type="password"] {
   margin: 10px 0;
@@ -137,7 +137,7 @@
 #sign-up div input[type="password"] {
   width: 100%;
   border-radius: 4px;
-  background-color: rgba(215, 215, 215, 0.6);
+  background-color: white;
   font-size: 0.9rem;
   border: 1px solid gray;
   outline: none;
@@ -163,7 +163,7 @@
 #sign-up div input:focus {
   background-color: transparent;
   outline: none;
-  border: 1px solid black;
+  border: 2px solid gray;
 }
 
 /* big-carousel */

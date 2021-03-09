@@ -221,6 +221,9 @@ img {
   transform: rotate(-45deg);
   transition: 0.5s;
 }
+.search-leftbox a:hover {
+  color: #e93434 !important;
+}
 /* footer */
 .footer-wrapper {
   background-color: black;
@@ -296,7 +299,10 @@ img {
   color: #e93434;
   cursor: pointer;
 }
-.backtotop-btn a:hover {color: #e93434;}
+.backtotop-btn a:hover {
+  color: #e93434;
+  transition: 0.3s;
+}
 /* media query */
 @media (max-width: 1200px) {
   .containerr {

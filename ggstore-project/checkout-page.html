@@ -21,11 +21,13 @@
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
+      defer
     ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
+      defer
     ></script>
     <!-- Font Awesome -->
     <script
@@ -105,18 +107,22 @@
     <!-- /NavBar -->
     <!-- Main -->
     <div id="overlay"></div>
-    <div class="checkout-form-wrapper" id="checkout-form-wrapper">
-      <div class="checkout-main">
+    <div class="checkout-form-wrapper" id="checkout-form-wrapper1">
+      <div class="checkout-main" id="checkout-main1">
         <div class="main-header">
-          <div id="pttt">PHƯƠNG THỨC THANH TOÁN</div>
-          <div id="muahang">MUA HÀNG</div>
+          <div id="pttt" style="border-bottom: 5px solid #e93434">
+            PHƯƠNG THỨC THANH TOÁN
+          </div>
+          <div id="muahang" style="border-bottom: 1px solid gray; color: #999">
+            MUA HÀNG
+          </div>
         </div>
         <div style="margin: 20px 0; font-weight: 500">
           CHỌN PHƯƠNG THỨC THANH TOÁN
         </div>
-        <label class="accordion" id="credit-card">
+        <div class="accordion" id="credit-card">
           <span style="display: flex; align-items: center">
-            <div class="checkbox"></div>
+            <div class="checkbox">✓</div>
             <img src="images/visa.png" alt="" />
             <p>Credit Card</p></span
           >
@@ -127,7 +133,7 @@
                 type="number"
                 placeholder="*Số thẻ"
                 autofocus
-                maxlength="12"
+                maxlength="16"
               />
             </div>
             <div
@@ -172,15 +178,15 @@
               <input type="number" min="000" max="999" placeholder="*CVV" />
             </div>
           </form>
-        </label>
+        </div>
 
-        <label class="accordion" id="paypal">
+        <div class="accordion" id="paypal">
           <span style="display: flex; align-items: center">
-            <div class="checkbox"></div>
+            <div class="checkbox">✓</div>
             <img src="images/paypal.png" alt="" />
             <p>Paypal</p></span
           >
-        </label>
+        </div>
       </div>
       <div class="checkout-sidebar">
         <div class="sidebar-header">
@@ -217,7 +223,7 @@
           <div
             class="product-row"
             style="
-              margin: 10px 0 150px 0;
+              margin: 10px 0;
               border-bottom: 1px solid gray;
               padding: 15px 0;
             "
@@ -225,24 +231,163 @@
             <div style="font-weight: bold">Thanh toán</div>
             <div>$15.99</div>
           </div>
-          <a class="checkout-btn" href="">TIẾP THEO</a>
+          <a class="checkout-btn" id="checkout-btn" style="cursor: pointer"
+            >TIẾP THEO</a
+          >
         </div>
       </div>
     </div>
     <!-- /Main -->
+    <!-- Main 2 -->
+    <div class="checkout-form-wrapper" id="checkout-form-wrapper2">
+      <div class="checkout-main" id="checkout-main2">
+        <div class="main-header">
+          <div id="pttt" style="border-bottom: 1px solid gray; color: #999">
+            PHƯƠNG THỨC THANH TOÁN
+          </div>
+          <div id="muahang" style="border-bottom: 5px solid #e93434">
+            MUA HÀNG
+          </div>
+        </div>
+        <div style="margin: 20px 0; font-weight: 500">
+          <span style="color: #e93434">GG</span>STORE COUPONS
+        </div>
+        <div class="accordion" id="coupons">
+          <span
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              font-size: 0.8rem;
+            "
+          >
+            <img
+              style="width: 120px"
+              src="images/kisspng-coupon-flyer-gratis-promotion-breakfast-coupon-5a79bddeedf5c1.1905274415179279029747.png"
+              alt=""
+            />
+            <p>
+              <span style="color: #e93434">GG </span>Store Coupon - 50% <br />
+              <span style="color: #999">HSD 22/04/2021</span>
+            </p>
+            <span id="apply-coupons">Áp dụng</span>
+            <span id="applied">Đã áp dụng ✔</span>
+          </span>
+        </div>
+        <div style="margin: 20px 0; font-weight: 500">
+          <p>KIỂM TRA LẠI THÔNG TIN THANH TOÁN</p>
+        </div>
+
+        <div class="accordion" id="changeback">
+          <span style="display: flex; align-items: center">
+            <div class="checkbox active">✓</div>
+            <img
+              style="width: 80px; margin: 0 40px"
+              src="images/visa.png"
+              alt=""
+            />
+            <p style="font-weight: 500">Credit Card</p></span
+          >
+          <span
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 20px 0;
+            "
+            ><p>Mã Số Thẻ: **** **** **** 1112</p>
+            <div class="back-btn" id="back-btn">THAY ĐỔI</div>
+          </span>
+        </div>
+      </div>
+      <div class="checkout-sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-title">GIỎ HÀNG</div>
+          <a class="close-button" href="product-page.html">&times;</a>
+        </div>
+        <div class="sidebar-content">
+          <div class="product-row">
+            <img
+              src="images/checkout-img.jpg"
+              alt=""
+              style="margin-right: 30px"
+            />
+            <div>
+              <p>Kena: Bridge of Spirits</p>
+              <p style="color: #999">By Ember Lab</p>
+            </div>
+          </div>
+          <div
+            class="product-row"
+            style="
+              margin: 10px 0;
+              border-bottom: 1px solid gray;
+              padding: 15px 0;
+            "
+          >
+            <div style="color: #999">Giá</div>
+            <div>$15.99</div>
+          </div>
+          <div class="product-row" id="discount">
+            <span style="color: #999">Giảm giá</span>
+            <span style="color: #e93434">-%7.99</span>
+          </div>
+          <div class="product-row" style="margin: 10px 0" id="before-coupon1">
+            <div style="color: #999">Tổng tiền</div>
+            <div>$15.99</div>
+          </div>
+          <div class="product-row" style="margin: 10px 0" id="after-coupon1">
+            <div style="color: #999">Tổng tiền</div>
+            <div>$8</div>
+          </div>
+          <div
+            id="before-coupon2"
+            class="product-row"
+            style="
+              margin: 10px 0;
+              border-bottom: 1px solid gray;
+              padding: 15px 0;
+            "
+          >
+            <div style="font-weight: bold">Thanh toán</div>
+            <div>$15.99</div>
+          </div>
+          <div
+            id="after-coupon2"
+            class="product-row"
+            style="border-bottom: 1px solid gray; padding: 15px 0"
+          >
+            <div style="font-weight: bold">Thanh toán</div>
+            <div>$8</div>
+          </div>
+          <a class="buy-btn" id="buy-btn" style="cursor: pointer">THANH TOÁN</a>
+        </div>
+      </div>
+    </div>
+    <!-- Check Out Success -->
+    <div id="success">
+      <div class="success-logo">
+        <i
+          class="fab fa-gitkraken fa-2x"
+          id="logo"
+          style="color: #e93434; margin-right: 10px"
+        ></i>
+        <p><span style="color: #e93434">GG</span><span>Store</span></p>
+      </div>
+      <div class="ss-row1">
+        CẢM ƠN BẠN ĐÃ MUA GAME TẠI <span style="color: #e93434">GG</span>STORE
+      </div>
+      <div class="ss-row2">Kena: Bridge of Spirits</div>
+      <a class="ss-btn" href="index.html">XEM GAME TRONG THƯ VIỆN</a>
+      <a class="ss-btn" href="all-game.html">TIẾP TỤC MUA SẮM</a>
+    </div>
     <!-- footer -->
-    <!-- /footer -->
-    <!-- Owl-Carousel Scr -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-    ></script>
+    <!-- /footer -->
     <!-- chon pttt -->
     <script>
       let acc1 = document.getElementById("credit-card");
@@ -251,12 +396,67 @@
       acc1.addEventListener("click", () => {
         acc1.querySelector(".checkbox").classList.add("active");
         acc2.querySelector(".checkbox").classList.remove("active");
-        hideForm.classList.toggle("active");
       });
       acc2.addEventListener("click", () => {
         acc2.querySelector(".checkbox").classList.add("active");
         acc1.querySelector(".checkbox").classList.remove("active");
       });
     </script>
+    <script>
+      let creditCard = document.getElementById("credit-card");
+      let paypal = document.getElementById("paypal");
+      creditCard.addEventListener("click", () => {
+        hideForm.classList.add("active");
+      });
+      paypal.addEventListener("click", () => {
+        hideForm.classList.remove("active");
+      });
+    </script>
+    <!-- process to checkout -->
+    <script>
+      $("#checkout-btn").click(() => {
+        $("#checkout-form-wrapper1").addClass("active");
+        $("#checkout-form-wrapper2").addClass("active");
+      });
+    </script>
+    <!-- apply coupons -->
+    <script>
+      let coupon = document.getElementById("coupons");
+      let apply = document.getElementById("apply-coupons");
+      let applied = document.getElementById("applied");
+      coupon.addEventListener("click", () => {
+        apply.classList.toggle("active");
+        applied.classList.toggle("active");
+        coupon.classList.toggle("active");
+        discount.classList.toggle("active");
+        before1.classList.toggle("active");
+        before2.classList.toggle("active");
+        after1.classList.toggle("active");
+        after2.classList.toggle("active");
+      });
+    </script>
+    <!-- go back -->
+    <script>
+      $("#back-btn").click(() => {
+        $("#checkout-form-wrapper1").removeClass("active");
+        $("#checkout-form-wrapper2").removeClass("active");
+      });
+    </script>
+    <!-- after apply coupons -->
+    <script>
+      let discount = document.getElementById("discount");
+      let before1 = document.getElementById("before-coupon1");
+      let before2 = document.getElementById("before-coupon2");
+      let after1 = document.getElementById("after-coupon1");
+      let after2 = document.getElementById("after-coupon2");
+    </script>
+    <!-- success purchase -->
+    <script>
+      $("#buy-btn").click(() => {
+        $("#success").addClass("active");
+        $("#checkout-form-wrapper2").removeClass("active");
+      });
+    </script>
+    <!-- overlay -->
   </body>
 </html>
