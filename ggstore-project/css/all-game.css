@@ -127,3 +127,15 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+@media (max-width: 600px) {
+  .game-content {
+    font-size: small;
+  }
+  .game-header-filter {
+    font-size: small;
+  }
+  .filter-toggle-btn {
+    width: 20px;
+    height: 12px;
+  }
+}
