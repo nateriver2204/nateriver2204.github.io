@@ -21,11 +21,13 @@
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
+      defer
     ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
+      defer
     ></script>
     <!-- Font Awesome -->
     <script
@@ -43,6 +45,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
       integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <!-- slick carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
       crossorigin="anonymous"
     />
     <!-- My CSS -->
@@ -177,14 +192,9 @@
         ĐĂNG NHẬP BẰNG TÀI KHOẢN <span style="color: #e93434">GG</span>STORE
       </div>
       <div style="width: 100%">
-        <input
-          type="email"
-          name=""
-          id=""
-          placeholder="Email hoặc số điện thoại"
-        />
+        <input type="email" name="" placeholder="Email hoặc số điện thoại" />
       </div>
-      <div><input type="password" name="" id="" placeholder="Mật khẩu" /></div>
+      <div><input type="password" name="" placeholder="Mật khẩu" /></div>
       <div class="form-flexrow" style="font-size: 0.8rem">
         <span
           ><input type="checkbox" name="luutk" id="luutk" />
@@ -224,48 +234,19 @@
     <!-- /Search -->
     <!-- Big-Carousel -->
     <div class="big-carousel-wrapper">
-      <div class="containerr">
-        <ul class="slides">
-          <li id="slide1"><img src="images/img1.webp" alt="" /></li>
-          <li id="slide2"><img src="images/img2.webp" alt="" /></li>
-          <li id="slide3"><img src="images/img3.webp" alt="" /></li>
-          <li id="slide4"><img src="images/img4.jpg" alt="" /></li>
-          <li id="slide5"><img src="images/img5.webp" alt="" /></li>
-          <!-- <li><img src="images/Rectangle 22.png" alt="" /></li> -->
-        </ul>
-
-        <ul class="thumbnails">
-          <li>
-            <a href="#slide1"
-              ><img src="images/thumb1.png" alt="" />
-              <p>HITMAN 3 Epic Game Store Exclusive</p></a
-            >
-          </li>
-          <li>
-            <a href="#slide2"
-              ><img src="images/thumb2.png" alt="" />
-              <p>Scott Pilgrim vs. The World: The Game - Complete Edition</p></a
-            >
-          </li>
-          <li>
-            <a href="#slide3"
-              ><img src="images/thumb3.png" alt="" />
-              <p>Cyberpunk 2077</p></a
-            >
-          </li>
-          <li>
-            <a href="#slide4"
-              ><img src="images/thumb4.png" alt="" />
-              <p>Grand Thief Auto V</p></a
-            >
-          </li>
-          <li>
-            <a href="#slide5"
-              ><img src="images/thumb5.png" alt="" />
-              <p>Super Meat Boy Forever</p></a
-            >
-          </li>
-        </ul>
+      <div class="slider-for">
+        <img src="images/img1.webp" alt="" />
+        <img src="images/img2.webp" alt="" />
+        <img src="images/img3.webp" alt="" />
+        <img src="images/img4.jpg" alt="" />
+        <img src="images/img5.webp" alt="" />
+      </div>
+      <div class="slider-nav">
+        <img src="images/img1.webp" alt="" />
+        <img src="images/img2.webp" alt="" />
+        <img src="images/img3.webp" alt="" />
+        <img src="images/img4.jpg" alt="" />
+        <img src="images/img5.webp" alt="" />
       </div>
     </div>
     <!-- /Big-Carousel -->
@@ -281,7 +262,7 @@
       </div>
       <div class="containerr">
         <div class="owl-carousel owl-theme">
-          <div class="item" style="width: 200px">
+          <div class="item">
             <a href="product-page.html">
               <img
                 src="images/EGS_DowninBermuda_YakCo_S2-1200x1600-dba8b5c164bae127a679160dc88ae3fd 1.png"
@@ -313,7 +294,7 @@
           <div class="free-game-heading-left">
             <i
               class="fas fa-gift"
-              style="font-size: 24px; margin-right: 8px"
+              style="margin-right: 8px; font-size: 24px;"
             ></i>
             <p>Game Miễn Phí</p>
           </div>
@@ -487,7 +468,7 @@
       </div>
       <div class="containerr auto-chess">
         <div class="banner-content">
-          <p style="font-size: 30px; color: white">Auto Chess</p>
+          <p style="font-size: 28px; color: white">Auto Chess</p>
           <p style="color: #dfdbdb; margin-top: 15px; margin-bottom: 25px">
             Bản cập nhật mùa đông với hai vị tướng mới !!!
           </p>
@@ -519,7 +500,7 @@
             <p style="margin-top: 15px; color: blue">Coming Soon</p>
           </a>
         </div>
-        <div class="game-sph" style="margin-left: 10px; margin-right: 10px">
+        <div class="game-sph" style="margin: 0 10px">
           <a href="">
             <img src="images/image 22.png" alt="" />
             <p style="color: #e93434; margin-top: 5px">
@@ -549,7 +530,7 @@
       </div>
       <div class="containerr catalog">
         <div class="banner-content">
-          <p style="font-size: 30px; color: white">Xem Toàn Bộ Game</p>
+          <p style="font-size: 24px; color: white">Xem Toàn Bộ Game</p>
           <p style="color: #d1d1d1; margin-top: 15px; margin-bottom: 25px">
             Khám phá và tìm kiếm các tựa game yêu thích của bạn!
           </p>
@@ -647,6 +628,56 @@
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous"
     ></script>
+    <!-- slick carousel -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(".slider-for").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        dots: true,
+        asNavFor: ".slider-nav",
+      });
+      $(".slider-nav").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        vertical: true,
+        asNavFor: ".slider-for",
+        centerMode: true,
+        focusOnSelect: true,
+        verticalSwiping: true,
+        arrows: false,
+        centerPadding: "30px",
+        responsive: [
+          {
+            breakpoint: 1000,
+            settings: {
+              centerPadding: "20px",
+            },
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 3,
+              centerPadding: "10px",
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              centerPadding: "80px",
+              slidesToShow: 1,
+              vertical: false,
+            },
+          },
+        ],
+      });
+    </script>
     <!-- /Owl-Carousel-Script -->
     <script>
       $(".owl-carousel").owlCarousel({
@@ -654,11 +685,11 @@
         margin: 15,
         nav: false,
         dots: false,
-        autoWidth: true,
         stagePadding: 50,
         responsive: {
           0: {
             items: 2,
+            stagePadding: 0,
           },
           600: {
             items: 3,

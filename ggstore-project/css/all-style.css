@@ -150,7 +150,7 @@ img {
 /* search */
 .search-wrapper {
   max-width: 1080px;
-  height: 100px;
+  padding: 40px 0;
   margin: auto;
 }
 .search-leftbox {
@@ -324,5 +324,11 @@ img {
   }
   .footer-container:last-child p {
     margin: 0 !important;
+  }
+}
+@media (max-width: 600px) {
+  .search-wrapper {
+    font-size: 0.85rem;
+    padding: 30px 0;
   }
 }
