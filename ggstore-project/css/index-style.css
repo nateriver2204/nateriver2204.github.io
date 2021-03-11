@@ -216,6 +216,11 @@
   font-size: 10px;
   color: white;
 }
+.new-release-btn:hover,
+.free-game-btn:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
 .owl-carousel {
   max-width: 1080px;
   overflow: hidden;
@@ -226,6 +231,13 @@
 .game-hot a,
 .game-sph a {
   color: black;
+}
+.owl-carousel .item img {
+  border-radius: 4px;
+}
+.owl-carousel .item:hover {
+  opacity: 0.8;
+  transition: 0.5s;
 }
 /* free-game */
 .free-game-wrapper {
@@ -282,6 +294,11 @@
   white-space: nowrap;
   overflow: hidden;
 }
+.game-hot:hover,
+.game-sph:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
 /* top-seller */
 /* banner1 */
 .banner-wrapper,
@@ -313,6 +330,10 @@
 }
 .readmore-btn:hover {
   opacity: 0.8;
+}
+.banner-wrapper .containerr:last-of-type,
+.catalog-wrapper .containerr:last-of-type {
+  cursor: pointer;
 }
 /* New Update */
 /* banner2 */

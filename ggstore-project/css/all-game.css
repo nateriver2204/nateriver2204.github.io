@@ -100,12 +100,18 @@
   margin-top: 3px;
 }
 .game-header-filter a:hover {
+  transition: 0.3s;
   color: #e93434;
 }
 .game-content a p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: wrap;
+}
+.panel li:hover {
+  color: #e93434;
+  cursor: pointer;
+  transition: 0.3s;
 }
 @media (max-width: 1100px) {
   .main-content-wrapper {
@@ -124,7 +130,7 @@
 }
 @media (max-width: 768px) {
   .game-content {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (max-width: 600px) {
@@ -137,5 +143,10 @@
   .filter-toggle-btn {
     width: 20px;
     height: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .game-content {
+    grid-template-columns: 1fr 1fr;
   }
 }
