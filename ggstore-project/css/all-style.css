@@ -50,6 +50,11 @@ img {
   justify-content: center;
   color: white;
 }
+.navbarr a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
 
 .navbarr-links ul {
   margin: 0;
