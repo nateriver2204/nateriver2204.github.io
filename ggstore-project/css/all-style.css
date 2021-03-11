@@ -48,9 +48,8 @@ img {
   align-items: center;
   line-height: 50px;
   justify-content: center;
-  color: white;
 }
-.navbarr a {
+a.navbarr-logo {
   text-decoration: none;
   cursor: pointer;
   color: white;
