@@ -272,6 +272,10 @@
 .free-games {
   width: 49%;
 }
+.free-games:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
 .free-game-btn a,
 .readmore-btn a,
 .playnow-btn a,

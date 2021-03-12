@@ -10,6 +10,8 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 .owl-nav {
   position: relative;
@@ -19,12 +21,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.owl-item {
-  opacity: 0.7;
-}
-.owl-item.active.center {
-  opacity: 1;
 }
 .owl-prev,
 .owl-next {
