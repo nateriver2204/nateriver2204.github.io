@@ -31,7 +31,7 @@ function loadDoc() {
       }
     }
   };
-  xhttp.open("GET", "http://localhost:3000/users", true);
+  xhttp.open("GET", "https://nateriver2204.herokuapp.com/users", true);
   xhttp.send();
 }
 loadDoc();
@@ -40,7 +40,7 @@ loadDoc();
 $("#save-btn").click(() => {
   $(".studentlist-wrapper").toggle("active");
   $(".addnewstudent-wrapper").toggle("active");
-  $.post("http://localhost:3000/users", {
+  $.post("https://nateriver2204.herokuapp.com/users", {
     name: `${$("#inputName").val()}`,
     birthday: `${$("#inputYear").val()}`,
     email: `${$("#inputEmail").val()}`,
