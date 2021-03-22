@@ -9,6 +9,9 @@ body {
 h1 {
   text-align: center;
 }
+tbody tr td a {
+  text-decoration: none !important;
+}
 #add-btn {
   background-color: #00a751;
   color: white;
@@ -27,12 +30,15 @@ h1 {
   cursor: pointer;
 }
 #add-btn:hover,
-.edit-btn:hover,
-.trash-btn:hover,
+.edit-btn a:hover,
+.trash-btn a:hover,
 #back-btn:hover,
 #save-btn:hover {
   transition: 0.3s;
   opacity: 0.7;
+}
+.studentlist-wrapper.active {
+  display: none;
 }
 .container form {
   margin: 50px 0;
@@ -54,13 +60,4 @@ h1 {
   border-radius: 4px;
   padding: 0.5rem 0.8rem;
   cursor: pointer;
-}
-.studentlist-wrapper.active {
-  display: none;
-}
-.addnewstudent-wrapper {
-  display: none;
-}
-.addnewstudent-wrapper.active {
-  display: block;
 }

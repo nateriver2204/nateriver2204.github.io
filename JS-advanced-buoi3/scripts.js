@@ -1,12 +1,3 @@
-$("#add-btn").click(() => {
-  $(".studentlist-wrapper").toggle("active");
-  $(".addnewstudent-wrapper").toggle("active");
-});
-$("#back-btn").click(() => {
-  $(".studentlist-wrapper").toggle("active");
-  $(".addnewstudent-wrapper").toggle("active");
-});
-
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
@@ -18,12 +9,12 @@ function loadDoc() {
               <td>${JSON.parse(this.responseText)[i].email}</td>
               <td>${JSON.parse(this.responseText)[i].phone}</td>
               <td>
-                <span class="edit-btn"
+                <a class="edit-btn"
                   ><i class="fas fa-edit"></i> Chỉnh sửa
-                <span>
+                </a>
                 <span>|</span>
-                <span class="trash-btn"
-                  ><i class="fas fa-trash-alt"></i> Xóa</span
+                <a class="trash-btn"
+                  ><i class="fas fa-trash-alt"></i> Xóa</a
                 >
               </td>
             </tr>`);

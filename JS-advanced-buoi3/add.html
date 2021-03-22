@@ -21,74 +21,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="studentlist-wrapper">
-      <h1>Danh sách học viên</h1>
-      <div class="container">
-        <div id="add-btn" href="add.html">
-          <i class="fas fa-plus-circle"></i> Thêm học viên
-        </div>
-      </div>
-      <div class="container">
-        <table class="table table-striped">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">Họ tên</th>
-              <th scope="col">Năm sinh</th>
-              <th scope="col">Email</th>
-              <th scope="col">Số điện thoại</th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Levi Ackerman</th>
-              <td>1990</td>
-              <td>beyblade@scout.com</td>
-              <td>160-658-5054</td>
-              <td>
-                <span class="edit-btn">
-                  <i class="fas fa-edit"></i> Chỉnh sửa
-                </span>
-                <span>|</span>
-                <span class="trash-btn">
-                  <i class="fas fa-trash-alt"></i> Xóa
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Satoru Gojo</th>
-              <td>1989</td>
-              <td>strongest@jujutsu.com</td>
-              <td>120-719-8928</td>
-              <td>
-                <span class="edit-btn">
-                  <i class="fas fa-edit"></i> Chỉnh sửa
-                </span>
-                <span>|</span>
-                <span class="trash-btn">
-                  <i class="fas fa-trash-alt"></i> Xóa
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Meliodas</th>
-              <td>2000</td>
-              <td>dragonsin@wrath.com</td>
-              <td>250-715-2300</td>
-              <td>
-                <span class="edit-btn">
-                  <i class="fas fa-edit"></i> Chỉnh sửa
-                </span>
-                <span>|</span>
-                <span class="trash-btn">
-                  <i class="fas fa-trash-alt"></i> Xóa
-                </span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
     <div class="addnewstudent-wrapper">
       <h1>Thêm mới học viên</h1>
       <div class="container">
@@ -127,8 +59,10 @@
           </div>
         </form>
         <div class="buttons-wrapper">
-          <div id="back-btn"><i class="fas fa-chevron-left"></i> Quay lại</div>
-          <div id="save-btn"><i class="fas fa-save"></i> Lưu</div>
+          <a id="back-btn" href="index.html"
+            ><i class="fas fa-chevron-left"></i> Quay lại</a
+          >
+          <a id="save-btn"><i class="fas fa-save"></i> Lưu</a>
         </div>
       </div>
     </div>
