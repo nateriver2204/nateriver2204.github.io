@@ -62,7 +62,7 @@
           <a id="back-btn" href="index.html"
             ><i class="fas fa-chevron-left"></i> Quay lại</a
           >
-          <a id="save-btn" href="index.html"><i class="fas fa-save"></i> Lưu</a>
+          <a id="edited-btn"><i class="fas fa-save"></i> Lưu</a>
         </div>
       </div>
     </div>
@@ -84,5 +84,34 @@
     ></script>
     <!-- my js -->
     <script src="scripts.js"></script>
+    <!-- edit info -->
+    <script>
+      let link = location.href;
+      let userId = link.slice(link.indexOf("?") + 1);
+      $.get(
+        "https://nateriver2204.herokuapp.com/users" + "?id=" + userId,
+        function (data) {
+          document.getElementById("inputName").value = data[0].name;
+          document.getElementById("inputYear").value = data[0].birthday;
+          document.getElementById("inputEmail").value = data[0].email;
+          document.getElementById("inputPhone").value = data[0].phone;
+        }
+      );
+
+      $("#edited-btn").click(() => {
+        $.ajax({
+          type: "PUT",
+          url: "https://nateriver2204.herokuapp.com/users/" + userId,
+          data: {
+            name: $("#inputName").val(),
+            birthday: $("#inputYear").val(),
+            email: $("#inputEmail").val(),
+            phone: $("#inputPhone").val(),
+          },
+        }).done(() => {
+          window.location.href = "index.html";
+        });
+      });
+    </script>
   </body>
 </html>

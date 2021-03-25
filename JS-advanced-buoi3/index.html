@@ -19,6 +19,13 @@
     />
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
+    <style>
+      input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <div class="studentlist-wrapper">
@@ -36,46 +43,25 @@
               <th scope="col">Năm sinh</th>
               <th scope="col">Email</th>
               <th scope="col">Số điện thoại</th>
-              <th scope="col"></th>
+              <th scope="col">
+                <a id="del-all"
+                  ><i class="fas fa-trash-alt"></i> Xóa các mục được chọn</a
+                >
+              </th>
+              <th scope="col">
+                <input type="checkbox" name="" id="check-all" />
+              </th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Levi Ackerman</th>
-              <td>1990</td>
-              <td>beyblade@scout.com</td>
-              <td>160-658-5054</td>
-              <td>
-                <a class="edit-btn"><i class="fas fa-edit"></i> Chỉnh sửa </a>
-                <span>|</span>
-                <a class="trash-btn"><i class="fas fa-trash-alt"></i> Xóa</a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Satoru Gojo</th>
-              <td>1989</td>
-              <td>strongest@jujutsu.com</td>
-              <td>120-719-8928</td>
-              <td>
-                <a class="edit-btn"><i class="fas fa-edit"></i> Chỉnh sửa </a>
-                <span>|</span>
-                <a class="trash-btn"><i class="fas fa-trash-alt"></i> Xóa</a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Meliodas</th>
-              <td>2000</td>
-              <td>dragonsin@wrath.com</td>
-              <td>250-715-2300</td>
-              <td>
-                <a class="edit-btn"><i class="fas fa-edit"></i> Chỉnh sửa </a>
-                <span>|</span>
-                <a class="trash-btn"><i class="fas fa-trash-alt"></i> Xóa</a>
-              </td>
-            </tr>
-          </tbody>
+          <tbody></tbody>
         </table>
       </div>
+    </div>
+    <div class="delete-noti-wrapper">
+      <h5>Bạn có chắc muốn xóa không?</h5>
+      <br />
+      <a class="btn btn-primary" id="del-btn">Có</a>
+      <a class="btn btn-secondary" id="not-del-btn">Không</a>
     </div>
     <!-- boostrap js -->
     <script

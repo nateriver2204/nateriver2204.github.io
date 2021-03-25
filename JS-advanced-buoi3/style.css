@@ -4,22 +4,35 @@
   padding: 0;
 }
 body {
-  margin: 100px auto;
+  margin: 50px auto;
 }
 h1 {
   text-align: center;
+  margin: 30px;
 }
-tbody tr td a {
+table {
+  margin: 30px 0;
+}
+table a {
   text-decoration: none !important;
+}
+th a {
+  color: white;
+  cursor: pointer;
+}
+th a:hover {
+  color: white;
+  transition: 0.3s;
+  opacity: 0.7;
 }
 #add-btn {
   background-color: #00a751;
   color: white;
   cursor: pointer;
-  margin: 20px 0;
   padding: 0.5rem 0.8rem;
   border-radius: 4px;
   width: fit-content;
+  text-decoration: none;
 }
 .edit-btn {
   color: #01a4b6;
@@ -30,10 +43,11 @@ tbody tr td a {
   cursor: pointer;
 }
 #add-btn:hover,
-.edit-btn a:hover,
-.trash-btn a:hover,
+.edit-btn:hover,
+.trash-btn:hover,
 #back-btn:hover,
-#save-btn:hover {
+#save-btn:hover,
+#edited-btn:hover {
   transition: 0.3s;
   opacity: 0.7;
 }
@@ -49,15 +63,36 @@ tbody tr td a {
 }
 #back-btn {
   background-color: #888;
+  text-decoration: none;
 }
-#save-btn {
+#save-btn,
+#edited-btn {
   background-color: #00a751;
   margin: 0 10px;
+  text-decoration: none !important;
 }
 #back-btn,
-#save-btn {
+#save-btn,
+#edited-btn {
   color: white;
   border-radius: 4px;
   padding: 0.5rem 0.8rem;
   cursor: pointer;
+}
+.delete-noti-wrapper {
+  border: 1px solid gray;
+  padding: 20px;
+  width: max-content;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 4px 8px rgba(215, 215, 215, 0.5);
+  display: none;
+}
+.delete-noti-wrapper.active {
+  display: block;
 }
