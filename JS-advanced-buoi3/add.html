@@ -30,7 +30,12 @@
               >Họ tên <span style="color: red">*</span></label
             >
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="inputName" />
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                autofocus
+              />
             </div>
           </div>
           <div class="form-group row">
@@ -62,7 +67,10 @@
           <a id="back-btn" href="index.html"
             ><i class="fas fa-chevron-left"></i> Quay lại</a
           >
-          <a id="save-btn" href="index.html"><i class="fas fa-save"></i> Lưu</a>
+          <a id="save-btn"><i class="fas fa-save"></i> Lưu</a>
+        </div>
+        <div class="addinfo-noti-wrapper">
+          <div class="addinfo-success-noti"></div>
         </div>
       </div>
     </div>
@@ -84,5 +92,31 @@
     ></script>
     <!-- my js -->
     <script src="scripts.js"></script>
+    <script>
+      // save info
+      $("#save-btn").click(() => {
+        $(".addinfo-success-noti").append(
+          `
+            <p>Đã thêm thành công <b> ${$("#inputName").val()} </b></p>
+            <a class="btn btn-success" id="backToList-btn">Đến trang danh sách</a>
+            <a class="btn btn-primary" id="stayHere-btn">Thêm học viên khác</a>
+        `
+        );
+        $(".addinfo-noti-wrapper").show();
+        $.post("https://nateriver2204.herokuapp.com/users", {
+          name: $("#inputName").val(),
+          birthday: $("#inputYear").val(),
+          email: $("#inputEmail").val(),
+          phone: $("#inputPhone").val(),
+        });
+        $("#backToList-btn").click(() => {
+          window.location.href = "index.html";
+        });
+        $("#stayHere-btn").click(() => {
+          window.location.href = "add.html";
+        });
+      });
+      // save check box
+    </script>
   </body>
 </html>

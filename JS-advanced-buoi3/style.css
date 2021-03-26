@@ -96,3 +96,27 @@ th a:hover {
 .delete-noti-wrapper.active {
   display: block;
 }
+.page-nav-wrapper {
+  text-align: center;
+}
+.addinfo-success-noti {
+  text-align: center;
+  border: 1px solid gray;
+  padding: 20px;
+  width: max-content;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 4px;
+}
+.addinfo-noti-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}

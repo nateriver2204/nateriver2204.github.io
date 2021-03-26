@@ -38,6 +38,25 @@ function loadDoc() {
         $(this).parent().parent().remove();
       });
     });
+    $(".del-checkbox").click(function () {
+      let delId = $(this).attr("data-del-id");
+      $("#del-all").click(() => {
+        if ($(":checked").length > 0) {
+          $(".delete-noti-wrapper").addClass("active");
+          $("#not-del-btn").click(() => {
+            $(".delete-noti-wrapper").removeClass("active");
+          });
+          $("#del-btn").click(() => {
+            $(".delete-noti-wrapper").removeClass("active");
+            $.ajax({
+              type: "DELETE",
+              url: "https://nateriver2204.herokuapp.com/users/" + delId,
+            });
+            $(this).parent().parent().remove();
+          });
+        }
+      });
+    });
     //
   };
   xhttp.open("GET", "https://nateriver2204.herokuapp.com/users", true);
@@ -46,17 +65,9 @@ function loadDoc() {
 loadDoc();
 
 // add info
-$("#save-btn").click(() => {
-  $.post("https://nateriver2204.herokuapp.com/users", {
-    name: $("#inputName").val(),
-    birthday: $("#inputYear").val(),
-    email: $("#inputEmail").val(),
-    phone: $("#inputPhone").val(),
-  });
-});
+
 // onclick="removeUser(${users[i].id}, this)" cho moi button
 $("#check-all").click(() => {
   $(".del-checkbox").click();
 });
-
-// del function
+// show id function
