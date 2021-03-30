@@ -18,7 +18,7 @@ function loadDoc() {
                   ><i class="fas fa-trash-alt"></i> Xóa</a
                 >                
               </td>
-              <td><input type="checkbox" class="del-checkbox" data-del-id="${users[i].id}"></input></td>              
+              <td><input type="checkbox" class="del-checkbox" data-del-id="${users[i].id}" onclick="getId(${users[i].id})"></input></td>              
             </tr>`);
       }
     }
@@ -41,28 +41,31 @@ function loadDoc() {
         });
     });
     // del info checkbox
-    $(".del-checkbox").click(function () {
-      let delId = $(this).attr("data-del-id");
-      console.log(delId);
-      $("#del-all").click(() => {
-        if ($(":checked").length > 0) {
-          $(".delete-noti-wrapper").addClass("active");
-          $("#not-del-btn").click(() => {
-            $(".delete-noti-wrapper").removeClass("active");
-          });
-          $("#del-btn")
-            .off("click")
-            .click(() => {
-              $(".delete-noti-wrapper").removeClass("active");
-              $.ajax({
-                type: "DELETE",
-                url: "https://nateriver2204.herokuapp.com/users/" + delId,
-              });
-              $(this).parent().parent().remove();
-            });
-        }
-      });
-    });
+
+    // $(".del-checkbox").click(function () {
+    //   listId.push($(this).attr("data-del-id"));
+    //   console.log(listId);
+
+    //     $("#del-all").click(() => {
+    //       if ($(":checked").length > 0) {
+    //         $(".delete-noti-wrapper").addClass("active");
+    //         $("#not-del-btn").click(() => {
+    //           $(".delete-noti-wrapper").removeClass("active");
+    //         });
+    //         $("#del-btn")
+    //           .off("click")
+    //           .click(() => {
+    //             $(".delete-noti-wrapper").removeClass("active");
+    //             $.ajax({
+    //               type: "DELETE",
+    //               url: "https://nateriver2204.herokuapp.com/users/" + delId,
+    //             });
+
+    //             $(this).parent().parent().remove();
+    //           });
+    //       }
+    //     });
+    // });
   };
   xhttp.open(
     "GET",
@@ -78,7 +81,6 @@ loadDoc();
 // onclick="removeUser(${users[i].id}, this)" cho moi button
 let countClick = 0;
 $("#check-all").click(() => {
-  // $(".del-checkbox").click();
   countClick++;
   if (countClick % 2 == 1) {
     $(".del-checkbox").prop("checked", true);
@@ -87,3 +89,14 @@ $("#check-all").click(() => {
   }
 });
 // show id function
+let listId = [];
+
+function getId(id) {
+  listId.push(id);
+  console.log(listId);
+}
+$("#del-all").click(() => {
+  for (i = 0; i < listId.length; i++) {
+    console.log($("[data-del-id = i]"));
+  }
+});
