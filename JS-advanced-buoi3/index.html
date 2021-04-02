@@ -30,10 +30,13 @@
   <body>
     <div class="studentlist-wrapper">
       <h1>Danh sách học viên</h1>
-      <div class="container">
-        <a id="add-btn" href="add.html"
-          ><i class="fas fa-plus-circle"></i> Thêm học viên</a
-        >
+      <div class="container sec-container">
+        <a id="add-btn" href="add.html">
+          <i class="fas fa-plus-circle"></i> Thêm học viên
+        </a>
+        <a id="del-all">
+          <i class="fas fa-trash-alt"></i> Xóa các mục đã chọn
+        </a>
       </div>
       <div class="container">
         <table class="table table-striped">
@@ -43,11 +46,7 @@
               <th scope="col">Năm sinh</th>
               <th scope="col">Email</th>
               <th scope="col">Số điện thoại</th>
-              <th scope="col">
-                <a id="del-all"
-                  ><i class="fas fa-trash-alt"></i> Xóa các mục được chọn</a
-                >
-              </th>
+              <th scope="col"></th>
               <th scope="col">
                 <input type="checkbox" name="" id="check-all" />
               </th>
@@ -63,15 +62,21 @@
       <a class="btn btn-primary" id="del-btn">Có</a>
       <a class="btn btn-secondary" id="not-del-btn">Không</a>
     </div>
-    <!-- <div class="page-nav-wrapper">
-      <div class="container">
-        <button class="btn btn-primary btn-sm" onclick="showId()">1</button>
-        <button class="btn btn-secondary btn-sm">2</button>
-        <button class="btn btn-secondary btn-sm">3</button>
-        <button class="btn btn-secondary btn-sm">4</button>
-        <button class="btn btn-secondary btn-sm">5</button>
-      </div>
-    </div> -->
+    <div class="container">
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" id="prev-btn" href="#">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item">
+          <a class="page-link" id="next-btn" href="#">Next</a>
+        </li>
+      </ul>
+    </div>
     <!-- boostrap js -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

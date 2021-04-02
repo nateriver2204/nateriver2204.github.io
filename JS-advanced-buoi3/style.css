@@ -34,6 +34,19 @@ th a:hover {
   width: fit-content;
   text-decoration: none;
 }
+#del-all {
+  background-color: #ea2b48;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  width: fit-content;
+  text-decoration: none;
+}
+.container.sec-container {
+  display: flex;
+  justify-content: space-between;
+}
 .edit-btn {
   color: #01a4b6;
   cursor: pointer;
@@ -43,6 +56,7 @@ th a:hover {
   cursor: pointer;
 }
 #add-btn:hover,
+#del-all:hover,
 .edit-btn:hover,
 .trash-btn:hover,
 #back-btn:hover,

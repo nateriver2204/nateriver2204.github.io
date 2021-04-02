@@ -96,10 +96,10 @@
       $.get(
         "https://nateriver2204.herokuapp.com/users" + "?id=" + userId,
         function (data) {
-          document.getElementById("inputName").value = data[0].name;
-          document.getElementById("inputYear").value = data[0].birthday;
-          document.getElementById("inputEmail").value = data[0].email;
-          document.getElementById("inputPhone").value = data[0].phone;
+          $("#inputName").val(data[0].name);
+          $("#inputYear").val(data[0].birthday);
+          $("#inputEmail").val(data[0].email);
+          $("#inputPhone").val(data[0].phone);
         }
       );
 
